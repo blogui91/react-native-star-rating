@@ -57,6 +57,8 @@ const propTypes = {
   starStyle: ViewPropTypes.style,
   iconSolid: PropTypes.bool,
   onStarButtonPress: PropTypes.func.isRequired,
+  textLabel: PropTypes.string,
+  textLabelStyle: ViewPropTypes.style,
 };
 
 const defaultProps = {
@@ -64,6 +66,8 @@ const defaultProps = {
   icoMoonJson: undefined,
   starStyle: {},
   iconSolid: false,
+  textLabel: undefined',
+  textLabelStyle: {},
 };
 
 class StarButton extends Component {
@@ -103,6 +107,8 @@ class StarButton extends Component {
       starSize,
       starStyle,
       iconSolid,
+      textLabel,
+      textLabelStyle,
     } = this.props;
 
     const Icon = this.iconSetFromProps();
@@ -153,6 +159,9 @@ class StarButton extends Component {
         onPress={this.onButtonPress}
       >
         {this.renderIcon()}
+        {textLabel ? (
+          <Text style={textLabelStyle}>{textLabel}</Text>
+        ) : null}
       </Button>
     );
   }
