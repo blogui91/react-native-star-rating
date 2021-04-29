@@ -1,6 +1,6 @@
 // React and react native imports
 import React, { Component } from "react";
-import { Image, StyleSheet, ViewPropTypes } from "react-native";
+import { Image, StyleSheet, ViewPropTypes, Text } from "react-native";
 import PropTypes from "prop-types";
 import { createIconSetFromIcoMoon } from "react-native-vector-icons";
 
