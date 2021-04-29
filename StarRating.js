@@ -119,6 +119,7 @@ class StarRating extends Component {
       starSize,
       starStyle,
       iconSolid,
+      textLabelStyle,
     } = this.props;
 
     const newContainerStyle = {
