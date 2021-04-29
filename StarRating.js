@@ -55,6 +55,7 @@ const propTypes = {
   starStyle: ViewPropTypes.style,
   selectedStar: PropTypes.func,
   iconSolid: PropTypes.bool,
+  textLabelStyle: ViewPropTypes.style,
 };
 
 const defaultProps = {
@@ -79,6 +80,7 @@ const defaultProps = {
   starStyle: {},
   selectedStar: () => {},
   iconSolid: false,
+  textLabelStyle: {},
 };
 
 class StarRating extends Component {
@@ -173,6 +175,8 @@ class StarRating extends Component {
             starColor={finalStarColor}
             starIconName={starIconName}
             starSize={starSize}
+            textLabel={index + 1}
+            textLabelStyle={textLabelStyle}
             starStyle={starStyle}
           />
         </AnimatableView>
