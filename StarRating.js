@@ -175,7 +175,7 @@ class StarRating extends Component {
             starColor={finalStarColor}
             starIconName={starIconName}
             starSize={starSize}
-            textLabel={index + 1}
+            textLabel={i + 1}
             textLabelStyle={textLabelStyle}
             starStyle={starStyle}
           />
