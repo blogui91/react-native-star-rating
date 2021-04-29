@@ -149,7 +149,7 @@ class StarButton extends Component {
   }
 
   render() {
-    const { activeOpacity, buttonStyle, disabled } = this.props;
+    const { activeOpacity, buttonStyle, disabled, textLabel } = this.props;
 
     return (
       <Button
