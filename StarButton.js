@@ -66,7 +66,7 @@ const defaultProps = {
   icoMoonJson: undefined,
   starStyle: {},
   iconSolid: false,
-  textLabel: undefined',
+  textLabel: undefined,
   textLabelStyle: {},
 };
 
